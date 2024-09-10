@@ -1,0 +1,33 @@
+{
+    "name": "jimwins/langur",
+    "description": "Langur is a simple database migration tool written in PHP",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jim Winstead",
+            "email": "jimw@trainedmonkey.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+          "Langur\\" : "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1.0",
+        "ext-pdo": "*"
+    },
+    "suggest": {
+        "ext-pdo-mysql": "*",
+        "ext-pdo-pgsql": "*",
+        "ext-pdo-sqlite": "*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.8",
+        "phpstan/phpstan": "^1.10"
+    },
+    "bin": [
+        "bin/langur"
+    ]
+}
